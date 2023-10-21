@@ -25,7 +25,7 @@ jobs:
       uses: anchore/scan-action@v3
       id: scan
       with:
-        image: "docker.io/ansible-docker:latest"
+        image: "docker.io/molu8bits/ansible-docker:latest"
         fail-build: false
         # severity-cutoff: critical
     - name: Upload vulnerability report
