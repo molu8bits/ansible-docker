@@ -1,0 +1,7 @@
+# custom
+setup-ubuntu-playbook/common-molu.yml
+setup-ubuntu-playbook
+
+# ansible
+*.retry
+
