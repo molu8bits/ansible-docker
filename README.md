@@ -2,17 +2,31 @@
 
 ## Build image
 
-```sh
-docker build -t docker.io/molu8bits/ansible-docker:v0.0.1 .
+```bash
+docker build -t docker.io/molu8bits/ansible-docker:v1.1.0 .
 ```
 
+## Info
+
+[![License](https://img.shields.io/github/license/molu8bits/ansible-docker)](/LICENSE)
+[![Release](https://img.shields.io/github/release/molu8bits/ansible-docker.svg)](https://github.com/molu8bits/ansible-docker/releases/latest)
+![Docker Image Size](https://img.shields.io/docker/image-size/molu8bits/ansible-docker.svg?sort=date)
+![Docker Image Version (latest by date):](https://img.shields.io/docker/v/molu8bits/ansible-docker.svg?sort=date)
+![Docker Pulls](https://img.shields.io/docker/pulls/molu8bits/ansible-docker.svg)
+
 ## Ansible oneliners examples
+
+### Check version
+
+```bash
+docker run -it --rm docker.io/molu8bits/ansible-docker:latest ansible --version
+```
 
 ### Azure delete ResouceGroup
 
 ```bash
-ansible localhost -m azure_rm_resourcegroup -a 'name=myResourceGroup location=eastus'
-docker run -it --rm ansible --version
+docker run -it --rm docker.io/molu8bits/ansible-docker:latest ansible localhost -m azure_rm_resourcegroup -a 'name=myResourceGroup location=eastus'
+
 ```
 
 ### Run playbook using user and password

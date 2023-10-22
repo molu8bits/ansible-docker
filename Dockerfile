@@ -4,7 +4,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
 RUN  apt-get update; \
-  apt-get install -y python3-pip wget curl libkrb5-dev; \
+  apt-get install -y python3-pip wget curl libkrb5-dev language-pack-en; \
   apt-get install -y openssh-client sshpass; \
   mkdir -p /ansible/run; mkdir -p /etc/ansible; \
   apt-get upgrade -y; \

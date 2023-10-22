@@ -48,7 +48,8 @@ jobs:
           retention-days: 20
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
+        # uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@49abf0ba24d0b7953cb586944e918a0b92074c80
         with:
           sarif_file: semgrep.sarif
           category: semgrep
