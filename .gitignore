@@ -1,7 +1,7 @@
 # custom
 setup-ubuntu-playbook/common-molu.yml
 setup-ubuntu-playbook
-
+**/contabo*
 # ansible
 *.retry
 
